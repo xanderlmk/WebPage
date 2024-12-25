@@ -1,258 +1,119 @@
-body {
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-    /* Font change */
-    background-color: #111;
-    /*black*/
-    color: #fff;
-    /* Text color */
-    text-align: center;
-}
-
-header {
+.my-background {
     background: url('../images/aboutme.jpg') no-repeat center center;
     background-size: cover;
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-
-header h1 {
-    font-size: 3.5em;
-    margin-top: 5em;
-    color: #000000;
-}
-
-header p {
-    font-size: 1.2em;
-    margin: 1em 1em 2em 1em;
-    color: #000000;
-}
-
-.transparent-background {
-    background-color: rgba(0, 0, 0, 0.5);
-    /* Semi-transparent black background */
-    padding: 20px;
-    color: pink;
     font-family: 'Great Vibes', cursive;
 }
 
-nav {
-    position: absolute;
-    top: 20px;
-    right: 20px;
+.nav-background {
+    background-color: rgba(0, 0, 0, 0.25);
+    /* Semi-transparent black background */
+    color: #e888e8;
 }
 
-a:link {
-    color: #ffaaff;
+.my-h1-text{
+    font-size: xx-large;
+}
+
+.my-p-text{
+    font-size: large;
+}
+
+.my-hover a:link {
     margin-left: 20px;
     text-decoration: none;
-    font-weight: 700;
 }
 
-a:visited {
-    color: #ff88ff;
+.my-hover a:visited {
+    color: #ba5eba;
 }
 
-a:focus {
+.my-hover a:focus {
     color: #d700ff;
     background-color: grey;
 }
 
-a:hover {
+.my-hover a:hover {
     color: #d700ff;
     background-color: grey;
 }
 
-a:active {
+.my-hover a:active {
     color: #ff00dd;
     background-color: white;
 }
 
-section {
-    padding: 60px 20px;
+.my-border {
+    border-color: #bd1f1f;
 }
 
-section a {
-    text-align: center;
-    font-size: 2em;
-}
+/* Custom borders for different screen sizes */
+@media (min-width: 992px) {
 
-#return {   
-    padding-top: 10px;
-    align-items: flex-end;
-    text-align: right;
-    font-size: x-small;
-}
-#return a{
-    color: #44ff3e;
-}
-
-section h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #FF007F;
-    font-weight: bold;
-    font-style: italic;
-}
-
-section h3 {
-    font-size: 1.5em;
-    margin-bottom: 20px;
-    color: #FFA653;
-}
-
-section p {
-    font-size: 1.2em;
-    color: #CCAC00;
-}
-
-#hobbies {
-    background: linear-gradient(to right, #FFB6C1, #FF69B4, #FF1493);
-    /* pink gradient color from left to right */
-    text-align: center;
-    /* Center align the content */
-}
-
-#hobbies article {
-    display: flex;
-    /* Display grid items inline */
-    flex-direction: row;
-    flex-wrap: start;
-}
-
-#hobbies h2 {
-    margin-bottom: 20px;
-    /* Add spacing below the heading */
-    color: #111;
-}
-
-#hobbies div {
-    background-color: #111;
-    display: flex;
-    /* Display grid items inline */
-    flex-direction: column;
-    flex: auto;
-    border: 1px solid #ccc;
-    /* White border */
-    margin: 0 10px;
-    /* Add margin between grid items */
-    padding: 5px;
-    vertical-align: top;
-    /* Align items to the top */
-    width: calc(100% - 2.5em);
-    /* Calculate width to fit three items per row with spacing */
-    max-width: max-content;
-    height: auto;
-    box-sizing: border-box;
-    text-align: center;
-    /* Align text to the left */
-    justify-content: top;
-}
-
-@media (max-width: 600px) {
-    #hobbies article {
-        flex-direction: column;
-        /*Make it into a column for phones */
+    /* Large screens (lg and up) */
+    .guitar-border-lg {
+        border-right: 2px solid #842029;
     }
 
-    #hobbies div {
-        width: calc(100% - 20px);
+    .minecraft-border-lg {
+        border-left: 2px solid #842029;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    /* Medium screens (md) */
+    .guitar-border-md {
+        border-right: 2px solid #842029;
+        border-bottom: 2px solid #842029;
     }
 
-    .transparent-background {
-        background-color: rgba(0, 0, 0, 0.5);
-        /* Semi-transparent black background */
-        padding: 5px;
-        color: pink;
-        font-family: 'Great Vibes', cursive;
-        width: max-content;
+    .working-out-border-md {
+        border-bottom: 2px solid #842029;
+        
+    }
+    .my-background{
+        font-size: medium;
+    }
+    .my-h1-text{
+        font-size: x-large;
+    }
+    .my-p-text{
         font-size: small;
     }
+}
 
-    nav {
-        position: absolute;
-        top: 5px;
-        right: 5px;
+@media (max-width: 767.98px) {
+
+    /* Small screens (sm and below) */
+    .guitar-border-sm {
+        border-bottom: 2px solid #842029;
     }
-    .social-links a {
-        font-size: medium;
-        color: red;
-        margin: 0 10px;
+
+    .minecraft-border-sm {
+        border-top: 2px solid #842029;
+    }
+
+    .my-background{
+        font-size: x-small;
+    }
+    .my-h1-text{
+        font-size: small;
+    }
+    .my-p-text{
+        font-size: xx-small;
     }
 }
 
-@media (max-width: 900px) {
-    #hobbies div {
-        width: calc(100% - 20px);
-        /* Three items per row for large screens */
-    }
-}
-
-
-#hobbies img {
-    width: 100%;
-    /* Make images take up the most space */
-    height: auto;
-    /* Maintain aspect ratio */
-}
-
-#japan a:link {
-    margin: 0;
-}
-
-#japan a:hover {
-    background-color: red;
-}
-
-#japan a:active {
-    background-color: red;
-}
-
-#japan img {
-    width: 30vh;
-    height: auto;
-    margin: 0 10px;
-    /* Add margin between grid items */
-    border: 2px solid #ff00ff;
-    /* pink border */
-}
-
-#japan div {
+.my-japan-background {
     background: linear-gradient(to right, #FFB6C1, #FF69B4, #FF1493);
     /* pink gradient color from left to right */
-    border: 3px solid #ccc;
-    /* White border */
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    padding: 20px;
-    width: fit-content;
-    max-width: 100%;
-    flex: auto;
-}
-
-strong {
-    font-size: 1.25em;
-    /* Update bold font */
-}
-
-footer {
-    font-size: 1.5em;
-    padding: 20px;
-}
-
-footer p {
-    margin: 0;
 }
 
 .social-links a {
-    font-size: x-large;
     color: red;
-    margin: 0 10px;
+    padding: 5px;
+}
+
+.my-footer{
+    background-color: rgb(68, 41, 56);
 }
