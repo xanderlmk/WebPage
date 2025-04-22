@@ -1,8 +1,8 @@
 .my-background {
-    background: url('../images/aboutme.jpg') no-repeat center center;
-    background-size: contain;
+    background: url('../images/aboutme.jpg') no-repeat center center fixed;
     font-family: 'Great Vibes', cursive;
-    background-attachment:fixed;
+    background-size: cover; /* instead of 'contain' */
+    position: relative;
 }
 
 .nav-background {
