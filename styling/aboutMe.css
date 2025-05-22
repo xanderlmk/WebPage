@@ -23,7 +23,12 @@
     font-size: large;
 }
 
+.my-hover-text{
+    color: #ba5eba;
+}
+
 .my-hover a:link {
+    color: #ba5eba;
     text-decoration: none;
 }
 
@@ -103,6 +108,7 @@
     .my-background {
         font-size: x-small;
         font-weight: bolder;
+        background-size: auto;
     }
 
     .my-h1-text {
